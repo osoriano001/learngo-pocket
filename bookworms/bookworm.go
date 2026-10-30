@@ -57,3 +57,40 @@ func loadBookworms(filePath string) ([]Bookworm, error) {
 	return bookworms, nil
 
 }
+
+// takes data which is a list of bookworms and returns the books in common as a slice of Book
+func findCommonBooks (bookworms []Bookworm) []Book {
+	return nil
+	
+}
+/*
+Notes:
+Built-in types for data collection:
+- map: unordered array that contains a key-value pair.
+	- slices, arrays, channels
+
+Writing to a map example:
+	myMap[k] = v
+
+Reading from a map example: same format as reading from slices
+	var mySlice []string
+	...
+	v := mySlice[3]
+	mapped := map[int]string{}
+	...
+	v := mapped[3]
+
+difference being maps also return a boolean indicating whether the key was found.
+if the key is not found the value returned is zero of the valueType.
+	v, ok := mapped[3]
+	if !ok {
+		// key not found
+	}
+or
+	if v, ok := mapped[3]; !ok {
+		// key not found
+	}
+
+
+	*/
+
